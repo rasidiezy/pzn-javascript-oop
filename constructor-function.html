@@ -1,0 +1,32 @@
+<!Constructor Function html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Constructor Function</title>
+</head>
+<body>
+      <script>
+      
+            //Constructor Function
+            function Person(firstName, lastName) {
+                  //properti 
+                  this.firstName = firstName;
+                  this.lastName = lastName;
+                  // method
+                  this.sayHello = function (name) {
+                        console.log(`Hello ${name}, my name is ${this.firstName}`);
+                  }
+            }
+
+            const rasidi = new Person('Rasidi', 'Ahmad');
+            // rasidi.firstName = "Rasidi";
+            rasidi.sayHello("Reki")
+            const joko = new Person();
+
+            console.log(rasidi);
+            console.log(joko);
+      </script>
+</body>
+</html>
